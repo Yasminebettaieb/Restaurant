@@ -1,0 +1,268 @@
+
+	@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+	*{
+		margin: 0;
+		margin-bottom: 10px;
+		padding: 0;
+		color: #454545;
+	} 
+	.containerby{
+		margin: 0;
+    }
+
+	.navbar {
+		position: relative;
+		min-height: 50px;
+		margin-bottom: 1px !important;
+		border: 1px solid transparent;
+	}
+	.container-fluid {
+		padding-right: 0px;
+		padding-left: 0px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+    .fa {
+		color:gray !important;
+	}
+   
+    .carousel{
+        width: 50% !important;
+        margin: auto !important;
+    }
+	h1{
+		width: 10% !important;
+	    position: relative;
+	    top: 40px;
+	    left: 90%;
+	    cursor: pointer;
+	}
+	h1:before {
+		content: attr(data-count);
+		color: white;
+		position: absolute;
+		font-size: 15px;
+		text-align: center;
+		top: -18px;
+		width: 20px;
+		height: 20px;
+		background: #6b5f3c;
+		border-radius: 50%;
+		opacity: 0;
+	}
+	h1.zero:before{
+		opacity: 1;
+	}
+	section {
+		margin: 25px auto 20px;
+		width: 90%;
+		height: 400px;
+		display: flex;
+		justify-content: space-around;
+	}
+		
+		section div{
+			width: 22%;
+			height: 93%;
+			background:#f5f5f5;
+			padding: 0%;
+			border: 0.7px solid gray;
+			position: relative;
+		}
+		img{
+			width: 300px;
+			height: 186px;
+		}
+		p{
+			margin: 5px;
+		}
+		h6{
+		    width: 50px;
+		    padding: 5px;
+		    margin: 10px;
+		    font-size: 15px;
+		}
+		.categorie1{
+			padding-left: 70px;
+			color:#6b5f3c;
+			text-decoration: underline;
+		}
+		.categorie1:hover{
+			color: #222;
+		}
+		button {
+			padding: 5px;
+			margin-left: 30%;
+			background: #6b5f3c;
+			border: none;
+			outline: none;
+			font-weight: bold;
+			color: #fafafa;
+			cursor: pointer;
+		}
+		button:hover{
+			opacity: 0.7;
+		}
+		section div span{
+			position: absolute;
+		    top: 14px;
+		    left: 13px;
+		    background: #6b5f3c;
+		    width: 300px;
+		    height: 186px;
+		    display: none;
+		}
+		section div span img{
+			width: 100%;
+			height: 100%;
+		}
+		section div:nth-child(1)>span.active{
+			animation: first 0.5s ease-in;
+			z-index: 2;
+			display: block;
+
+		}
+		section div:nth-child(2)>span.active{
+			animation: second 0.5s ease-in;
+			z-index: 2;
+			display: block;
+
+		}
+		section div:nth-child(3)>span.active{
+			animation: third 0.5s ease-in;
+			z-index: 2;
+			display: block;
+
+		}
+		section div:nth-child(4)>span.active{
+			animation: four 0.5s ease-in;
+			z-index: 2;
+			display: block;
+
+		}
+		@keyframes first{
+			to{
+				width: 30px;
+			    height: 20px;
+			    left: 1290px;
+			    top: -70px;
+			}
+		}
+		@keyframes second{
+			to{
+				width: 30px;
+			    height: 20px;
+			    left: 948px;
+			    top: -70px;
+			}
+		}
+		@keyframes third{
+			to{
+				width: 30px;
+			    height: 20px;
+			    left: 606px;
+			    top: -70px;
+			}
+		}
+		@keyframes four{
+			to{
+				width: 30px;
+			    height: 20px;
+			    left: 265px;
+			    top: -70px;
+			}
+		}
+
+        
+		
+		.select{
+			width: 60%;
+			height: 580px;
+			padding: 5%;
+			background: #222;
+			position: absolute;
+			top: -1000px;
+			left: 30%;
+			transition: 0.5s;
+			overflow-y: auto;
+			margin: auto;
+		}
+		.select.display{
+			top: 10px;
+		}
+		.select div {
+			width: 500px;
+			height: 150px;
+			display: flex;
+			padding: 5px;
+			position: relative;
+			margin: 5px auto;
+		}
+		.select div img{
+			width: 300px;
+			height: 100%;
+		}
+		.select div p{
+			padding: 35px;
+			color: white;
+		}
+		.select div h6, .select div button {
+			position: absolute;
+			left: 70%;
+			top: 70%;
+			color: white;
+		}
+	 
+		.select div button {
+			left: 28%;
+			top: 75%;
+		}
+		
+		.select div span{
+			display: none;
+		}
+        .item{
+            overflow:hidden;
+        }
+     .headers{
+		 background-image: url("4.jpg") ;
+		 background-repeat: no-repeat;
+		 width: 100%;
+		 height: 300px;
+	 background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;}
+	 .navbar{
+		 margin-bottom: 0 !important;
+		 min-height: 40px !important;
+		 height: 60px;
+	margin-left: auto;background-color: rgb(82, 83, 87);
+color: white;}
+    .navbar-default{
+		color: white;
+	}
+	 .titre{
+		 text-align: center;
+	 }
+	 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+		color: white;
+		background-color :rgb(82,83,87);
+		text-align: center;
+	}
+
+	 .titre1{
+		display: block;
+		margin-block-start: 0.83em;
+		margin-block-end: 0.83em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		margin: auto;
+		padding: auto;
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 2.5rem;
+	}
+	.banner {
+		background: #a770ef;
+		background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+		background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+	  }
